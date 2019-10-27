@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd8623c850dd08b216e48cc521ddceee",
+    "revision": "6b5a33ae377b11f6489126ec66ddfe14",
     "url": "https://ptkpyitheim.github.io/ctf-challenge/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://ptkpyitheim.github.io/ctf-challenge/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "7814d1a7c73c00be0d3f",
+    "revision": "3abdb1d36b4c7919776b",
     "url": "https://ptkpyitheim.github.io/ctf-challenge/static/css/main.7dfa905d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://ptkpyitheim.github.io/ctf-challenge/static/js/2.b7830c6d.chunk.js"
   },
   {
-    "revision": "7814d1a7c73c00be0d3f",
-    "url": "https://ptkpyitheim.github.io/ctf-challenge/static/js/main.5b1bed9c.chunk.js"
+    "revision": "3abdb1d36b4c7919776b",
+    "url": "https://ptkpyitheim.github.io/ctf-challenge/static/js/main.41ecd5c5.chunk.js"
   },
   {
     "revision": "065cea789185f44962ca",
