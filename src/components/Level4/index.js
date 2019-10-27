@@ -12,7 +12,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 
-class Level2 extends React.Component {
+class Level4 extends React.Component {
 
     constructor(props) {
         super(props)
@@ -25,16 +25,15 @@ class Level2 extends React.Component {
     handleChange = event => {
         this.setState({
             answer: event.target.value,
-            toolTipOpen: false,
         })
     }
 
     validate = event => {
         event.preventDefault();        
-        if(this.state.answer === "flag{only_if_you_look_at_css_file_too}") {
+        if(this.state.answer === "flag{haha_it's_just_hidden}") {
             alert("Success!");
             //Reroute to next page
-            this.props.history.push('/level3');
+            this.props.history.push('/level5');
         }
         else {
             this.setState({
@@ -42,18 +41,6 @@ class Level2 extends React.Component {
                 open: true,
             })
         } 
-    }
-
-    handleToolTipOpen = () => {
-        this.setState({
-            toolTipOpen: true,
-        })
-    }
-
-    handleToolTipClose = () => {
-        this.setState({
-            toolTipOpen: false,
-        })
     }
 
     handleClose = (event, reason) => {
@@ -66,18 +53,15 @@ class Level2 extends React.Component {
     };
 
     render() {
-
         return(
             <div>
-                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 2 </h3> 
+                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 4 </h3> 
 
                 <div className="center">
 
                     <Container className="contain" maxWidth="xl">
                         <Center>
-                        <Tooltip disableFocusListener disableTouchListener title="I wonder where else I can find comments...">
-                            <Button>HINT</Button>
-                        </Tooltip>                        
+                            <div className="isItHidden"> {"flag{haha_it's_just_hidden}"} </div>                       
                         </Center>
                         <Center>
                             <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
@@ -125,4 +109,4 @@ class Level2 extends React.Component {
     }
 }
 
-export default withRouter(Level2);
+export default withRouter(Level4);

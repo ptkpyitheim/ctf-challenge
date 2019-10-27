@@ -12,7 +12,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 
-class Level2 extends React.Component {
+class Level3 extends React.Component {
 
     constructor(props) {
         super(props)
@@ -20,6 +20,10 @@ class Level2 extends React.Component {
             answer: "",
             open: false,
         };
+    }
+
+    componentDidMount() {
+        console.log("flag{console_can_help_you_debug_a_lot}");       
     }
 
     handleChange = event => {
@@ -31,7 +35,7 @@ class Level2 extends React.Component {
 
     validate = event => {
         event.preventDefault();        
-        if(this.state.answer === "flag{only_if_you_look_at_css_file_too}") {
+        if(this.state.answer === "flag{console_can_help_you_debug_a_lot}") {
             alert("Success!");
             //Reroute to next page
             this.props.history.push('/level3');
@@ -66,16 +70,15 @@ class Level2 extends React.Component {
     };
 
     render() {
-
         return(
             <div>
-                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 2 </h3> 
+                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 3 </h3> 
 
                 <div className="center">
 
                     <Container className="contain" maxWidth="xl">
                         <Center>
-                        <Tooltip disableFocusListener disableTouchListener title="I wonder where else I can find comments...">
+                        <Tooltip disableFocusListener disableTouchListener title="ENOUGH HINTS">
                             <Button>HINT</Button>
                         </Tooltip>                        
                         </Center>
@@ -125,4 +128,4 @@ class Level2 extends React.Component {
     }
 }
 
-export default withRouter(Level2);
+export default withRouter(Level3);
