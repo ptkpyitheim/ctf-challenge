@@ -21,16 +21,15 @@ class App extends React.Component {
     return (
       <div className="body">
         <Container className="button-container">
-          <Router>
-            
+          <Router basename={process.env.PUBLIC_URL + '/'}>
             <Switch>
-              <Route exact path="/">
+              <Route exact path={process.env.PUBLIC_URL + '/'}>
                 <Home />
               </Route>
-              <Route exact path="/level1">
+              <Route exact path={process.env.PUBLIC_URL + '/level1'}>
                 <Level1 />
               </Route>
-              <Route exact path="/level2">
+              <Route exact path={process.env.PUBLIC_URL + '/level2'}>
                 <Level2 />
               </Route>
             </Switch>
