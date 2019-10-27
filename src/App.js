@@ -18,6 +18,7 @@ import {
 
 class App extends React.Component {
   render() {
+    console.log("Process env is " + process.env.PUBLIC_URL);
     return (
       <div className="body">
         <Container className="button-container">
