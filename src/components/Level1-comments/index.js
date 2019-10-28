@@ -28,9 +28,8 @@ class Level1 extends React.Component {
     }
 
     validate = event => {
-        //flag{this_one_is_quite_easy}
         event.preventDefault();        
-        if(this.state.answer === "hi") {
+        if(this.state.answer === "flag{this_one_is_quite_easy}") {
             //Reroute to next page
             alert("Nice you got it!");
             this.props.history.push('/level2');

@@ -9,7 +9,7 @@ import Level1 from './components/Level1-comments';
 import Level2 from './components/Level2';
 import Level3 from './components/Level3';
 import Level4 from './components/Level4';
-// import Level5 from './components/Level5';
+import Level5 from './components/Level5';
 // import Level6 from './components/Level6';
 // import Level7 from './components/Level7';
 // import Level8 from './components/Level8';
@@ -46,10 +46,10 @@ class App extends React.Component {
               <Route exact path={process.env.PUBLIC_URL + '/level4'}>
                 <Level4 />
               </Route>
-              {/* <Route exact path={process.env.PUBLIC_URL + '/level5'}>
+              <Route exact path={process.env.PUBLIC_URL + '/level5'}>
                 <Level5 />
               </Route>
-              <Route exact path={process.env.PUBLIC_URL + '/level6'}>
+              {/* <Route exact path={process.env.PUBLIC_URL + '/level6'}>
                 <Level6 />
               </Route>
               <Route exact path={process.env.PUBLIC_URL + '/level7'}>
