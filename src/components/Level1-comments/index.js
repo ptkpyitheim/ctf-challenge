@@ -58,7 +58,7 @@ class Level1 extends React.Component {
         console.log('this state open', this.state.open)
 
         return(
-            <div>
+            <div class="level-body">
                 <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 1 </h3> 
 
                 <div className="center">

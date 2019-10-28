@@ -12,6 +12,7 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-center": "^1.1.1",
     "react-dom": "^16.11.0",
+    "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },

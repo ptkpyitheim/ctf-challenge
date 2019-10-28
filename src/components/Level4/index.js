@@ -54,7 +54,7 @@ class Level4 extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="level-body">
                 <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 4 </h3> 
 
                 <div className="center">
