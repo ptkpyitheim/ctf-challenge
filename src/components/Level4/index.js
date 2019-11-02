@@ -1,11 +1,9 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import './index.css';
 import TextField from '@material-ui/core/TextField';
 import Center from 'react-center';
 import { withRouter } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
-import Tooltip from '@material-ui/core/Tooltip';
+
 
 
 import Snackbar from '@material-ui/core/Snackbar';
@@ -55,27 +53,27 @@ class Level4 extends React.Component {
     render() {
         return(
             <div className="level-body">
-                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 4 </h3> 
 
-                <div className="center">
+                <div className="contain">
 
-                    <Container className="contain" maxWidth="xl">
-                        <Center>
-                            <div className="isItHidden"> {"flag{haha_it's_just_hidden}"} </div>                       
-                        </Center>
-                        <Center>
-                            <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
-                                <TextField
-                                    id="standard-name"
-                                    label="Answer"
-                                    className="answer"
-                                    value={this.state.answer}
-                                    onChange={this.handleChange}
-                                    margin="normal"
-                                />
-                            </form>
-                        </Center>
-                    </Container>
+                    <h3 className="level-header">Level 4</h3>
+                    <Center>
+
+                    <div className="isItHidden"> {"flag{haha_it's_just_hidden}"} </div>       
+                    </Center>     
+                    <Center>
+           
+                    <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
+                        <TextField
+                            id="standard-name"
+                            label="Answer"
+                            className="answer"
+                            value={this.state.answer}
+                            onChange={this.handleChange}
+                            margin="normal"
+                        />
+                    </form>
+                    </Center>
 
                 </div>
 

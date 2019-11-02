@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import './index.css';
 import TextField from '@material-ui/core/TextField';
 import Center from 'react-center';
@@ -69,11 +68,11 @@ class Level2 extends React.Component {
 
         return(
             <div className="level-body">
-                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 2 </h3> 
 
-                <div className="center">
+                <div className="contain">
 
-                    <Container className="contain" maxWidth="xl">
+                        <h3 className="level-header"> Level 2 </h3> 
+
                         <Center>
                         <Tooltip disableFocusListener disableTouchListener title="I wonder where else I can find comments...">
                             <Button>HINT</Button>
@@ -91,7 +90,6 @@ class Level2 extends React.Component {
                                 />
                             </form>
                         </Center>
-                    </Container>
 
                 </div>
 

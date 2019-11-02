@@ -1,18 +1,4 @@
 
-.contain {
-    text-align: center;
-}
-
-.center {
-    position:absolute;
-    width:150px;
-    height:100px;
-    left:50%;
-    top:50%;
-    margin-left:-50px;
-    margin-top:-50px;
-}
-
 .answer {
     width: 200px;
     text-align: center;

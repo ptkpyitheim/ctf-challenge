@@ -13,6 +13,7 @@ export default function Home() {
             <Center>
                 <p className="p-3"> Hello CSE204 Student! </p>
             </Center>
+
             
             <Particles
                 className="particles"

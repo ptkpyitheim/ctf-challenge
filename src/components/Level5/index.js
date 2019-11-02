@@ -1,7 +1,9 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import './index.css'
 import TextField from '@material-ui/core/TextField';
+import Center from 'react-center';
+import { withRouter } from 'react-router-dom';
+
 
 
 import Snackbar from '@material-ui/core/Snackbar';
@@ -23,7 +25,7 @@ class Level5 extends React.Component {
 
     handleClick = (e) => {
         e.preventDefault();
-        console.log("Add me to asdf");
+        console.log("asdf");
         if(e.target.className === "asdf") {
             this.setState ({
                 openAns: true,
@@ -42,7 +44,7 @@ class Level5 extends React.Component {
         if(this.state.answer === "flag{you_clever_clever}") {
             alert("Success!");
             //Reroute to next page
-            // this.props.history.push('/level6');
+            this.props.history.push('/level6');
         }
         else {
             this.setState({
@@ -76,19 +78,23 @@ class Level5 extends React.Component {
         return(
             <div className="level-body">
 
-                <div className="contain-level5">
-                    <div className="h5">Level 5 - JavaScript</div>
-                    <button type="button" id={this.state.name} onClick={this.handleClick}> Change Me and Click Me! </button>
-                    <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
-                        <TextField
-                            id="standard-name"
-                            label="Answer"
-                            className="answer"
-                            value={this.state.answer}
-                            onChange={this.handleChange}
-                            margin="normal"
-                        />
-                    </form>
+                <div className="contain" style={{width: "250px"}}>
+                    <h3 className="level-header">Level 5 - JavaScript</h3>
+                    <Center>
+                        <button type="button" id={this.state.name} onClick={this.handleClick}> Change Me and Click Me! </button>
+                    </Center>
+                    <Center>
+                        <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
+                            <TextField
+                                id="standard-name"
+                                label="Answer"
+                                className="answer"
+                                value={this.state.answer}
+                                onChange={this.handleChange}
+                                margin="normal"
+                            />
+                        </form>
+                    </Center>
                 </div>
 
                 <Snackbar
@@ -143,4 +149,4 @@ class Level5 extends React.Component {
     }
 }
 
-export default Level5;
+export default withRouter(Level5);

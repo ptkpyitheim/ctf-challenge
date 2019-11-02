@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container} from 'react-bootstrap'
 import Home from './components/Home'
 
 
@@ -10,8 +9,8 @@ import Level2 from './components/Level2';
 import Level3 from './components/Level3';
 import Level4 from './components/Level4';
 import Level5 from './components/Level5';
-// import Level6 from './components/Level6';
-// import Level7 from './components/Level7';
+import Level6 from './components/Level6';
+import Level7 from './components/Level7';
 // import Level8 from './components/Level8';
 // import Level9 from './components/Level9';
 // import Level10 from './components/Level10';
@@ -49,12 +48,14 @@ class App extends React.Component {
               <Route exact path={process.env.PUBLIC_URL + '/level5'}>
                 <Level5 />
               </Route>
-              {/* <Route exact path={process.env.PUBLIC_URL + '/level6'}>
+              <Route exact path={process.env.PUBLIC_URL + '/level6'}>
                 <Level6 />
               </Route>
+              
               <Route exact path={process.env.PUBLIC_URL + '/level7'}>
                 <Level7 />
               </Route>
+              {/* 
               <Route exact path={process.env.PUBLIC_URL + '/level8'}>
                 <Level8 />
               </Route>
@@ -64,6 +65,7 @@ class App extends React.Component {
               <Route exact path={process.env.PUBLIC_URL + '/level10'}>
                 <Level10 />
               </Route> */}
+              <Route render={() => <div class="h2" style={{textAlign: "center", marginTop: "200px"}}> - 404 Not Found - </div>}></Route>
             </Switch>
     
           </Router>

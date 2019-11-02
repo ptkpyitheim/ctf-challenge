@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import './index.css';
 import TextField from '@material-ui/core/TextField';
 import Center from 'react-center';
@@ -72,11 +71,9 @@ class Level3 extends React.Component {
     render() {
         return(
             <div className="level-body">
-                <h3 style={{ textAlign : 'center', marginBottom : '20px', marginLeft : '50px'}}> Level 3 </h3> 
 
-                <div className="center">
-
-                    <Container className="contain" maxWidth="xl">
+                <div className="contain">
+                        <h3 className="level-header"> Level 3 </h3> 
                         <Center>
                         <Tooltip disableFocusListener disableTouchListener title="ENOUGH HINTS">
                             <Button>HINT</Button>
@@ -94,7 +91,6 @@ class Level3 extends React.Component {
                                 />
                             </form>
                         </Center>
-                    </Container>
 
                 </div>
 
