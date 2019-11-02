@@ -2,12 +2,11 @@
   "name": "ctf-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ptkpyitheim.github.io/ctf-challenge",
+  "homepage": "http://ptkpyitheim.github.io/ctf-challenge",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.1.1",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-center": "^1.1.1",
@@ -39,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }

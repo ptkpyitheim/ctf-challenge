@@ -17,7 +17,7 @@ import Level7 from './components/Level7';
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -25,10 +25,12 @@ import {
 
 class App extends React.Component {
   render() {
+    console.log("process env " + process.env)
+    console.log("PUBLIC URL" + process.env.PUBLIC_URL)
+
     return (
       <div className="body">
-        {/* <Container className="button-container hello"> */}
-          <Router basename={process.env.PUBLIC_URL}>
+          <Router>
             <Switch>
               <Route exact path={process.env.PUBLIC_URL + '/'}>
                 <Home />
@@ -69,7 +71,6 @@ class App extends React.Component {
             </Switch>
     
           </Router>
-        {/* </Container> */}
       </div>
     );
   }
