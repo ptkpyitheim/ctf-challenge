@@ -31,7 +31,7 @@ class Level1 extends React.Component {
         if(this.state.answer === "flag{this_one_is_quite_easy}") {
             //Reroute to next page
             alert("Nice you got it!");
-            this.props.history.push(process.env.PUBLIC_URL + '/level2');
+            this.props.history.push('/level2');
         }
         else {
             console.log("Nope wrong")

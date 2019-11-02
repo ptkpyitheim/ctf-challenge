@@ -7,6 +7,8 @@ import Particles from 'react-particles-js';
 import './home.css'
 
 export default function Home() {
+
+    console.log("asdf" , window.location.hash)
     return (
         <div className="home-body">
             
@@ -49,7 +51,7 @@ export default function Home() {
                  />
             
             <Center >
-                <Link style={{ textDecoration: 'none' }} to="/level1">
+                <Link style={{ textDecoration: 'none' }} to={'/level1'}>
                     <Button className="getstarted" variant="text" color="primary" size="large" style={{ fontSize: '40px'}} >
                         Let's Get Started
                     </Button>

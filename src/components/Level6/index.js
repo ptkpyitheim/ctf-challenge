@@ -51,7 +51,7 @@ class Level6 extends React.Component {
             this.setState({
                 answer: "",
             })
-            this.props.history.push(process.env.PUBLIC_URL + '/');
+            this.props.history.push('/');
         }
         else {
             this.setState({
