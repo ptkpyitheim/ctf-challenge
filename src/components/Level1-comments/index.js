@@ -34,7 +34,6 @@ class Level1 extends React.Component {
             this.props.history.push('/level2');
         }
         else {
-            console.log("Nope wrong")
             this.setState({
                 answer: "",
                 open: true,

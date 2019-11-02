@@ -7,8 +7,6 @@ import Particles from 'react-particles-js';
 import './home.css'
 
 export default function Home() {
-
-    console.log("asdf" , window.location.hash)
     return (
         <div className="home-body">
             
