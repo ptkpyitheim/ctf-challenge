@@ -1,3 +1,9 @@
+## If you are on this repo, you are either cheating because you're stuck or you are here to learn about the source code and/or contribute to the project!
+Here is the link to the challenge. Enjoy! [CTF-Challenge-By-PTK](https://ptkpyitheim.github.io/ctf-challenge).
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
