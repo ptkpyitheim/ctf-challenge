@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ecdc063c4045af3aa837647f7aeba877",
+    "revision": "160878139d8798a58cbc629b15066c9a",
     "url": "/ctf-challenge/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ctf-challenge/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "04fa43a1ca0e22bc6ce5",
+    "revision": "b6f4334a675af30a086b",
     "url": "/ctf-challenge/static/css/main.e25eca03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ctf-challenge/static/js/2.b6f608ab.chunk.js"
   },
   {
-    "revision": "04fa43a1ca0e22bc6ce5",
-    "url": "/ctf-challenge/static/js/main.8355af79.chunk.js"
+    "revision": "b6f4334a675af30a086b",
+    "url": "/ctf-challenge/static/js/main.fd75bad1.chunk.js"
   },
   {
     "revision": "8911c0884e8ffce5c877",
