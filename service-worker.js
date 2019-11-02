@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ctf-challenge/precache-manifest.cec449bf885f9bf1c5eea840c999ffe3.js"
+  "/ctf-challenge/precache-manifest.002e6e2d6263c25613d5fc0c3e9b39f8.js"
 );
 
 self.addEventListener('message', (event) => {
