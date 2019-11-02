@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CTF",
+  "name": "CTF-Challenge-CSE204-Web-Development",
   "icons": [
     {
       "src": "favicon.ico",
