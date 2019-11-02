@@ -74,7 +74,7 @@ class Level2 extends React.Component {
                         <h3 className="level-header"> Level 2 </h3> 
 
                         <Center>
-                        <Tooltip disableFocusListener disableTouchListener title="I wonder where else I can find comments...">
+                        <Tooltip disableFocusListener disableTouchListener title="I wonder where else I can find more...">
                             <Button>HINT</Button>
                         </Tooltip>                        
                         </Center>

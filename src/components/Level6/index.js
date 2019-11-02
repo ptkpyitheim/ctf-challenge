@@ -93,7 +93,6 @@ class Level6 extends React.Component {
 
                     <h3 className="level-header" style={{marginBottom : 0}}>Level 6 </h3>
                     <div style={{textAlign: "center"}}>
-                        <h5> Sum </h5>
                         <Icon color="primary" style={{ fontSize: 35, textAlign: "center", marginTop: 10 }}> add_circle </Icon>
                     </div>
 
