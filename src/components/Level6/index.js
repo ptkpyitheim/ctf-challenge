@@ -10,6 +10,8 @@ import Icon from '@material-ui/core/Icon';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
 
 
 
@@ -76,6 +78,11 @@ class Level6 extends React.Component {
         })    
     };
 
+    backToPrevLevel = (e) => {
+        e.preventDefault();
+        this.props.history.push('/level5');
+    }
+
 
     render() {
 
@@ -87,61 +94,73 @@ class Level6 extends React.Component {
         ));
 
         return(
-            <div className="level-body">
+            <div>
+                <IconButton
+                    key="back"
+                    aria-label="back"
+                    color="inherit"
+                    onClick={this.backToPrevLevel}
+                    className="ml-3 mt-3"
+                    >
+                    <ArrowBackIcon fontSize="large" />
+                </IconButton>
+                <div className="level-body">
 
-                <div className="contain">
+                    <div className="contain">
 
-                    <h3 className="level-header" style={{marginBottom : 0}}>Level 6 </h3>
-                    <div style={{textAlign: "center"}}>
-                        <Icon color="primary" style={{ fontSize: 35, textAlign: "center", marginTop: 10 }}> add_circle </Icon>
+                        <h3 className="level-header" style={{marginBottom : 0}}>Level 6 </h3>
+                        <div style={{textAlign: "center"}}>
+                            <Icon color="primary" style={{ fontSize: 35, textAlign: "center", marginTop: 10 }}> add_circle </Icon>
+                        </div>
+
+                        <Center>
+                            <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
+                                <TextField
+                                    id="standard-name"
+                                    label="Answer"
+                                    className="answer"
+                                    value={this.state.answer}
+                                    onChange={this.handleChange}
+                                    margin="normal"
+                                />
+                            </form>
+                        </Center>
+
                     </div>
 
-                    <Center>
-                        <form onSubmit={this.validate} className="form-container mt-2" noValidate autoComplete="off">
-                            <TextField
-                                id="standard-name"
-                                label="Answer"
-                                className="answer"
-                                value={this.state.answer}
-                                onChange={this.handleChange}
-                                margin="normal"
-                            />
-                        </form>
-                    </Center>
+                    <div className="numbers" style={{position: "absolute", top: "70%"}}>
+                        {renderNumbers}
+                    </div>
+                    
+                    <Snackbar
+                        anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+                        }}
+                        open={this.state.open}
+                        autoHideDuration={3000}
+                        onClose={this.handleClose}
+                        ContentProps={{
+                        'aria-describedby': 'message-id',
+                        }}
+                        message={<span id="message-id">Incorrect answer. Please try again.</span>}
+                        action={[
+                        <IconButton
+                            key="close"
+                            aria-label="close"
+                            color="inherit"
+                            onClick={this.handleClose}
+                        >
+                            <CloseIcon />
+                        </IconButton>,
+                        ]}
+
+                    />
+
 
                 </div>
-
-                <div className="numbers" style={{position: "absolute", top: "70%"}}>
-                    {renderNumbers}
-                </div>
-                
-                <Snackbar
-                    anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'left',
-                    }}
-                    open={this.state.open}
-                    autoHideDuration={3000}
-                    onClose={this.handleClose}
-                    ContentProps={{
-                    'aria-describedby': 'message-id',
-                    }}
-                    message={<span id="message-id">Incorrect answer. Please try again.</span>}
-                    action={[
-                    <IconButton
-                        key="close"
-                        aria-label="close"
-                        color="inherit"
-                        onClick={this.handleClose}
-                    >
-                        <CloseIcon />
-                    </IconButton>,
-                    ]}
-
-                />
-
-
             </div>
+
         );
     }
 
