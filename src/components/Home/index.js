@@ -6,6 +6,7 @@ import Center from 'react-center';
 import Particles from 'react-particles-js';
 import './home.css'
 
+
 export default function Home() {
     return (
         <div className="home-body">

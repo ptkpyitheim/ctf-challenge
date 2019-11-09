@@ -33,6 +33,7 @@ class Level4 extends React.Component {
         if(this.state.answer === "flag{haha_it's_just_hidden}") {
             alert("Success!");
             //Reroute to next page
+            this.props.progressCallBack(14);
             this.props.history.push('/level5');
         }
         else {

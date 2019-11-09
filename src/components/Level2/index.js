@@ -35,6 +35,7 @@ class Level2 extends React.Component {
         if(this.state.answer === "flag{only_if_you_look_at_css_file_too}") {
             alert("Success!");
             //Reroute to next page
+            this.props.progressCallBack(14);
             this.props.history.push('/level3');
         }
         else {

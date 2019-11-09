@@ -6,6 +6,10 @@ import Center from 'react-center';
 
 class Level7 extends React.Component {
 
+    componentDidMount() {
+        this.props.progressCallBack(14);
+    }
+
     render() {
         return(
             <div className="level-body">
@@ -14,6 +18,7 @@ class Level7 extends React.Component {
                     <Center>
                         <h5> Here's your last flag. You're done. {"flag{congratulations}"}</h5>
                     </Center>
+                    <p className="mt-3"> If you are not done with the rest of the levels, please complete so</p>
                 </div>  
 
             </div>

@@ -46,6 +46,7 @@ class Level5 extends React.Component {
         if(this.state.answer === "flag{you_clever_clever}") {
             alert("Success!");
             //Reroute to next page
+            this.props.progressCallBack(14);
             this.props.history.push('/level6');
         }
         else {

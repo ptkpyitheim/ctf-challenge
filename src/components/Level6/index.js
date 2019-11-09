@@ -49,10 +49,10 @@ class Level6 extends React.Component {
     validate = event => {
         event.preventDefault();        
         if(this.state.answer === ("flag{" + this.state.sum.toString() + "}")) {
-            alert("Success! I think you're done. I think.");
             this.setState({
                 answer: "",
             })
+            this.props.progressCallBack(14);
             this.props.history.push('/');
         }
         else {

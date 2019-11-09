@@ -39,6 +39,7 @@ class Level3 extends React.Component {
         if(this.state.answer === "flag{console_can_help_you_debug_a_lot}") {
             alert("Success!");
             //Reroute to next page
+            this.props.progressCallBack(14);
             this.props.history.push('/level4');
         }
         else {

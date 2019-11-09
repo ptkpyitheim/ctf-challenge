@@ -11,6 +11,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 
+
 class Level1 extends React.Component {
 
     constructor(props) {
@@ -32,6 +33,7 @@ class Level1 extends React.Component {
         if(this.state.answer === "flag{this_one_is_quite_easy}") {
             //Reroute to next page
             alert("Nice you got it!");
+            this.props.progressCallBack(14);
             this.props.history.push('/level2');
         }
         else {
